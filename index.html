@@ -4,29 +4,352 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #f0f4ff;
-      padding: 60px 20px;
-    }
-    h1 { color: #2563eb; }
-    p { color: #333; }
-    a {
-      display: inline-block;
-      background: #2563eb;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-    }
-  </style>
+  <meta name="description" content="Personal website of a graduate student exploring science, research, and ideas.">
+  <title>Your Name | Graduate Student</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>Welcome to My Website!</h1>
-  <p>I created this website using GitHub Pages.</p>
-  <a href="https://github.com/">Visit GitHub</a>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home">your name<span>.</span></a>
+
+      <button class="menu-toggle"
+              id="menu-toggle"
+              aria-label="Open navigation menu"
+              aria-expanded="false"
+              aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">HELLO AND WELCOME</p>
+
+        <h1>Hi, I'm <span>Your Name.</span></h1>
+
+        <p class="hero-subtitle">
+          Graduate student, researcher, and curious human.
+        </p>
+
+        <p class="hero-description">
+          I'm studying <strong>[Your Field]</strong> at
+          <strong>[Your University]</strong>. I'm interested in understanding
+          how the world works, asking meaningful questions, and learning
+          something new every day.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="button button-dark" href="#about">A little about me</a>
+          <a class="button button-outline" href="#research">Explore my work ↗</a>
+        </div>
+
+        <p class="hero-note">Currently learning, researching, and figuring it out.</p>
+      </div>
+
+      <div class="hero-visual">
+        <!-- Replace this illustration with a photo if you prefer -->
+        <div class="photo-frame">
+          <img
+            src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=800&q=85"
+            alt="Sunlight falling on green plants"
+          >
+          <div class="photo-caption">A little room to grow 🌱</div>
+        </div>
+        <span class="decor decor-one">✳</span>
+        <span class="decor decor-two">✦</span>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="section section-white" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">A LITTLE INTRODUCTION</p>
+          <h2>About me<span class="heading-dot">.</span></h2>
+        </div>
+
+        <div class="section-copy">
+          <p>
+            I'm a graduate student in [Department or Program] at
+            [University], where I spend my time exploring questions about
+            [your field or area of interest].
+          </p>
+          <p>
+            I enjoy the process of learning: following an interesting
+            question, trying something that might not work, and discovering
+            a new perspective along the way.
+          </p>
+          <p>
+            Outside of research, you can usually find me
+            [your hobbies, favorite activities, or small joys].
+            I believe there's a lot more to life than what we do in the lab
+            or at our desks.
+          </p>
+
+          <div class="interest-list">
+            <span>Curiosity</span>
+            <span>Science</span>
+            <span>Good books</span>
+            <span>Long walks</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="section" id="research">
+      <div class="container">
+        <p class="eyebrow">WHAT I'M EXPLORING</p>
+        <h2>Research<span class="heading-dot">.</span></h2>
+        <p class="section-intro">
+          The questions, ideas, and problems that keep me curious.
+        </p>
+
+        <div class="card-grid">
+          <article class="content-card">
+            <span class="card-number">01 / INTEREST</span>
+            <h3>[Research Interest One]</h3>
+            <p>
+              I'm interested in understanding [describe a research question
+              or topic] and why it matters.
+            </p>
+            <p class="card-meta">Keywords: [Topic], [Method]</p>
+          </article>
+
+          <article class="content-card">
+            <span class="card-number">02 / CURRENT WORK</span>
+            <h3>[Current Research Project]</h3>
+            <p>
+              My current work explores [briefly describe the problem,
+              approach, or scientific question].
+            </p>
+            <p class="card-meta">Status: In progress</p>
+          </article>
+
+          <article class="content-card">
+            <span class="card-number">03 / FUTURE QUESTIONS</span>
+            <h3>Things I want to understand</h3>
+            <p>
+              I'm also curious about [another topic], especially the
+              connections between [idea A] and [idea B].
+            </p>
+            <p class="card-meta">Always learning</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="section section-white" id="publications">
+      <div class="container">
+        <p class="eyebrow">RESEARCH OUTPUTS</p>
+        <h2>Publications<span class="heading-dot">.</span></h2>
+        <p class="section-intro">
+          Papers, preprints, posters, and other work I've contributed to.
+        </p>
+
+        <div class="publication-list">
+          <article class="publication">
+            <span class="publication-year">2026</span>
+            <div>
+              <h3>[Title of Your Paper]</h3>
+              <p>Your Name, Co-author Name, and Co-author Name.</p>
+              <p class="publication-venue">
+                [Journal or Conference] · [Volume or status]
+              </p>
+              <div class="text-links">
+                <a href="https://doi.org/" target="_blank"
+                   rel="noopener noreferrer">Paper ↗</a>
+                <a href="https://github.com/" target="_blank"
+                   rel="noopener noreferrer">Code ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication">
+            <span class="publication-year">2025</span>
+            <div>
+              <h3>[Another Publication or Conference Poster]</h3>
+              <p>Your Name and Co-author Name.</p>
+              <p class="publication-venue">
+                [Conference, Workshop, or Repository]
+              </p>
+              <div class="text-links">
+                <a href="https://example.com/" target="_blank"
+                   rel="noopener noreferrer">View work ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="small-note">
+          Still building your publication record? Replace these examples
+          with real work, or remove this section until you're ready.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="eyebrow">THINGS I'VE MADE OR EXPLORED</p>
+        <h2>Projects<span class="heading-dot">.</span></h2>
+        <p class="section-intro">
+          Experiments, collaborations, side projects, and things I've learned.
+        </p>
+
+        <div class="card-grid">
+          <article class="content-card project-card">
+            <div class="project-icon">⌘</div>
+            <h3>[Project One]</h3>
+            <p>
+              A short description of a project, the problem it addresses,
+              and what you learned by working on it.
+            </p>
+            <p class="card-meta">Python · Data analysis</p>
+            <a class="card-link" href="https://github.com/">
+              Explore project ↗
+            </a>
+          </article>
+
+          <article class="content-card project-card">
+            <div class="project-icon">✳</div>
+            <h3>[Project Two]</h3>
+            <p>
+              Describe an experiment, visualization, tool, or collaboration
+              that you're excited to share.
+            </p>
+            <p class="card-meta">Research · Visualization</p>
+            <a class="card-link" href="https://github.com/">
+              Explore project ↗
+            </a>
+          </article>
+
+          <article class="content-card project-card">
+            <div class="project-icon">↗</div>
+            <h3>[A Small Side Project]</h3>
+            <p>
+              Not every project needs to be a major research achievement.
+              Share something you made just because you were curious.
+            </p>
+            <p class="card-meta">Learning by doing</p>
+            <a class="card-link" href="https://github.com/">
+              Explore project ↗
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teaching -->
+    <section class="section section-white" id="teaching">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">SHARING WHAT I LEARN</p>
+          <h2>Teaching & mentoring<span class="heading-dot">.</span></h2>
+        </div>
+
+        <div class="section-copy">
+          <p>
+            I enjoy helping others understand difficult concepts and
+            creating spaces where people feel comfortable asking questions.
+          </p>
+
+          <div class="experience-item">
+            <span class="experience-date">[Semester, Year]</span>
+            <div>
+              <h3>[Teaching Assistant / Tutor / Mentor]</h3>
+              <p>[Course name], [University]</p>
+              <p>
+                Supported students with [topics, office hours, lab sessions,
+                grading, or mentoring responsibilities].
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <span class="experience-date">[Year]</span>
+            <div>
+              <h3>[Other Teaching Experience]</h3>
+              <p>[Workshop, course, or outreach program]</p>
+              <p>
+                [Describe what you contributed or what you learned.]
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section class="section cv-section" id="cv">
+      <div class="container cv-inner">
+        <div>
+          <p class="eyebrow">A MORE FORMAL OVERVIEW</p>
+          <h2>Want the full picture?</h2>
+          <p>
+            My CV includes my education, experience, research, and other
+            academic activities.
+          </p>
+        </div>
+        <a class="button button-dark" href="assets/cv.pdf" target="_blank"
+           rel="noopener noreferrer">View my CV ↗</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-white" id="contact">
+      <div class="container contact-inner">
+        <p class="eyebrow">SAY HELLO</p>
+        <h2>Let's connect<span class="heading-dot">.</span></h2>
+        <p class="section-intro">
+          Have an interesting idea, want to talk science, or just want to say
+          hello? I'd love to hear from you.
+        </p>
+
+        <a class="email-link" href="mailto:your.email@university.edu">
+          your.email@university.edu ↗
+        </a>
+
+        <div class="social-links">
+          <a href="https://github.com/" target="_blank"
+             rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/" target="_blank"
+             rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://orcid.org/" target="_blank"
+             rel="noopener noreferrer">ORCID ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="#home">your name<span>.</span></a>
+      <p>Made with curiosity and a little bit of code.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+    <div class="container copyright">
+      © <span id="year"></span> Your Name
+    </div>
+  </footer>
+
 </body>
 </html>
